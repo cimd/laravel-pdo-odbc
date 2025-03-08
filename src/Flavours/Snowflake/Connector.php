@@ -65,6 +65,7 @@ class Connector extends ODBCConnector implements OdbcDriver
 
             // set default fetch mode for PDO
             $connection->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, $db->getFetchMode());
+            $connection->setAttribute(PDO::ATTR_CASE, PDO::CASE_LOWER);
 
             return $db;
         };
