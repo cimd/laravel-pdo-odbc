@@ -20,5 +20,7 @@
         "LaravelPdoOdbc\\ODBCServiceProvider"
       ]
     }
-  }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
 }
