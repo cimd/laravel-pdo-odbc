@@ -39,7 +39,7 @@ trait GrammarHelper
     {
         if (method_exists($this, 'isExpression') && !$this->isExpression($table)) {
             $table = Processor::wrapTable($table);
-            return $this->wrap($this->tablePrefix . $table, true);
+            return $this->wrap($prefix . $table, true);
         }
 
         return $this->getValue($table);

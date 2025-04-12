@@ -33,7 +33,7 @@ class Connection extends ODBCConnection
             return new $queryGrammar();
         }
 
-        return new Grammars\Query();
+        return new Grammars\Query($this);
     }
 
     public function getDefaultSchemaGrammar()
@@ -44,7 +44,7 @@ class Connection extends ODBCConnection
             return new $schemaGrammar();
         }
 
-        return new Grammars\Schema();
+        return new Grammars\Schema($this);
     }
 
     /**
